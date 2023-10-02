@@ -1,0 +1,61 @@
+main {
+    background-image: linear-gradient(to bottom, rgba(144, 93, 254, 0.285), rgba(255, 255,255));
+}
+.footer-custom {
+    background-color: #271F30;
+    height: 50px;
+    position: relative;
+}
+.custom-shape-divider-bottom-1696116126 {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696116126 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 64px;
+}
+
+.custom-shape-divider-bottom-1696116126 .shape-fill {
+    fill: #271F30;
+}
+.q-header-layout {
+    height: 100px;
+    background-image: linear-gradient(#8223cd,#9734e9,#b569f7) ;
+    display: flex;
+    align-items: center;
+}
+.myGallery-btn {
+
+    position: relative;
+    left: 100px;
+    width: 200px;
+    font-size: 16px;
+    &:hover{
+      border-bottom: 2px solid white;
+
+    }
+}
+.uploadPage-btn {
+    position: relative;
+    left: 80px;
+    width: 200px;
+    font-size: 16px;
+    &:hover {
+        border-bottom: 2px solid white;
+    } 
+}
+.sign-out-btn {
+
+    background-color: #1c2a4f;
+    &:hover {
+     background-color: #FFFCF2;
+     color:#1c2a4f;
+    }
+}

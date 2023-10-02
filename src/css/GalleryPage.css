@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Trispace:wdth@90&display=swap');
+
+.gallery-page {
+    flex-direction: column;
+    align-items: center;
+
+    & h3 {
+        font-family: Trispace;
+        font-size: 24px;
+    }
+}
+.card-container {
+    width: 400px;
+    height: 250px ; 
+}
+.q-icon img {
+    width: 32px;
+    height: 32px;
+}
+.picture {
+    border-radius: 20px;
+    &:hover {
+        box-shadow:  3px 3px 10px #6163a3,
+        -3px -3px 10px #b5b9ff;
+        transition: .5s ease-out;
+    }
+   
+}
+.picture__caption {
+    display: flex;
+    flex-direction: column;
+    
+}
+.picture:hover  .picture__caption{
+    background-color: #00000098;
+    opacity: 1 ;
+}
+.picture__caption{
+    transition: .5s ease-out;
+    opacity: 0;
+    & p {
+        font-family: Open Sans;
+        font-size: 16px;
+    }
+}
+.picture-section {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+}

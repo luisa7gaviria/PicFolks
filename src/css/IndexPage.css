@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Trispace:wdth@90&display=swap');
+
+.index-page__img {
+    width: 458px;
+    height: 480px;
+    position: relative;
+    top: 120px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+.picfolks-slogan {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    & h4 {
+        font-family: 'Trispace';
+        font-weight: 600;
+    }
+    & h5 {
+        font-family: 'Raleway';
+        font-size: 30px;
+        position: relative;
+        left: 50px;
+    }
+}
+.form-icon {
+    position: relative;
+    bottom: 70px;
+    left: calc(50% - 32px);
+}
+#q-form__container {
+    
+    --form-details : #8137d6;
+    --background-field : #FFFCF2;
+
+    padding: 10px;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    background: var(--background-field);
+    box-shadow: 0px 0px 8px 2px rgb(108, 108, 108);
+    position: relative;
+    left: 480px;
+    top: 100px;
+    & .signBtn {
+        position: relative;
+        left: 10px;
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    & .logBtn {
+        position: relative;
+        left: 20px;
+        width: 100px;
+        margin-bottom: 10px;
+    }
+}
+.q-input .q-field__native {
+    background-color: var(--background-field);
+}
+.q-field--filled .q-field__control {
+    padding: 0;
+    color: var(--form-details);
+}
+.q-field__append{
+    background-color: var(--background-field);
+
+    &:hover {
+        background-color: var(--background-field)
+    }
+}
+.q-icon-eye {
+    color: var(--form-details);
+    cursor: pointer;
+    padding-right: 10px;
+}
+.submit-btn {
+    position: relative;
+    top: 50px;
+    background-image: linear-gradient(70deg, #B569F7, #F03A47) ;
+    width: 350px;
+    &:hover {
+        box-shadow: 0px 0px 7px 1px #a7a6a6;
+        color: white;
+    }
+}
+.login__folder {
+    width: 200px;
+    height: 200px;
+}

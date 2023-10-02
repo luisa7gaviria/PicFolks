@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Trispace:wdth@90&display=swap');
+
+.page_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75vh ;
+}
+.upload-info {
+    position: relative;
+    top: -30px;
+    left: 100px;
+    cursor: default;
+    & .upload-btn {
+        background-image: linear-gradient(20deg, #f4505b, #B569F7, #FFFCF2) ;
+        width: 250px;
+        height: 40px;
+        margin-left: 50px;
+        &:hover {
+            background-image: linear-gradient(120deg, #f4505b ,#B569F7, #FFFCF2) ;
+            color: white;
+            transition: .3s ease-out ;
+        }
+    }
+    & h4 {
+        font-family: Trispace;
+    }
+    & h6 {
+        font-family: Raleway;
+        font-size: 20px;
+    }
+}
+
+.input__container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 500px;
+    border: 4px double #F03A47;
+    border-radius: 20px;
+    position: relative;
+    bottom: 20px;
+    left: 250px;
+    box-shadow: 0px 0px 10px 3px #796b85;
+    z-index: 1;
+
+    & span {
+        font-size: 1rem;
+    }
+}
+.file-name {
+    position: absolute;
+    top: 50px;
+}
+.file-input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+}
+.input__guide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+    font-size: 1rem;
+    font-family: Open Sans;
+}
