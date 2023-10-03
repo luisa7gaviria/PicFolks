@@ -38,8 +38,8 @@
 
 <script>
 
-import { defineComponent } from 'vue'
-import '../css/IndexPage.css'
+import { defineComponent } from 'vue';
+import '../css/IndexPage.css';
 import SignIn from 'src/components/SignIn.vue';
 import LogIn from 'src/components/LogIn.vue';
 

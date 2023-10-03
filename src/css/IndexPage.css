@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Trispace:wdth@90&display=swap');
 
 .index-page__img {
-    width: 458px;
-    height: 480px;
+    
+    height: 450px;
     position: relative;
-    top: 120px;
+    top: 20%;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 .picfolks-slogan {
     position: absolute;
-    top: 10%;
-    left: 25%;
+    top: 30%;
+    left: 30%;
     & h4 {
         font-family: 'Trispace';
         font-weight: 600;
@@ -40,7 +40,7 @@
     box-shadow: 0px 0px 8px 2px rgb(108, 108, 108);
     position: relative;
     left: 480px;
-    top: 100px;
+    top: 150px;
     & .signBtn {
         position: relative;
         left: 10px;
