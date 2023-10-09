@@ -14,13 +14,13 @@ exports.setImage = functions.https.onRequest((req, res) => {
   const fileWriteStream = fs.createWriteStream(tempFilePath);
   let originFileName;
 
-  bby.on("file", (fieldname, file, filename, encoding, mimetype) => {
-    file.pipe(fileWriteStream);
-    originFileName = path.parse(filename.filename).name;
-  });
-
-  bby.on("field", (fieldname, val) => {
-    res.status(500).send("Only picture files are allowed");
+  bby.on("file", (fieldname, file, {filename, encoding, mimeType}) => {
+    if (!mimeType.startsWith("image/")) {
+      res.status(500).send("Only picture files are allowed");
+    } else {
+      file.pipe(fileWriteStream);
+      originFileName = path.parse(filename).name;
+    }
   });
 
   bby.on("finish", () => {
